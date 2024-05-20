@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
+    <!--Embed Style Method -->
 <head>
-<title>Greatest Cliff</title>
+<title>Greatest Cliff of California</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="activities">
 
 <!-- Container to Wrap Everything-->
 <div id="container">
 
-<!-- Brand of Website-->
-<header> Greatest Cliff's logo </header>
-<!-- Main Navigation -->
-<nav>
+<header> 
+<div class="main-header">
+    <div class="logo">
+        <img src="images/logo.png" alt="Great Cliffs logo" width="125">
+    </div>
+    <!-- Main Navigation -->        
+    <nav>
+    <div class="main-menu">
    <ul>
     <li><a href="index.html">Home</a></li>
     <li>Cliffs</li>
-    <li><a href="activities.html">Activities</a></li>
+    <li class="active"><a href="activities.html">Activities</a></li>
     <li><a href="contact.html">Contact</a></li>
    </ul> 
+</div>
 </nav><!-- End Main Navigation -->
+</div>
+</header>
 
 <!-- Main Content -->
 <main>
+   
     <h1>Activities</h1>
     <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
 
-    <table border="1">
+    <table>
     <caption>Activities at the Cliffs</caption>
     <thead>
         <tr>
@@ -38,60 +49,89 @@
     </thead>
     <tbody>
         <tr>
-            <th>Hiking</th>
-            <th>College Hikes</th>
-            <th>Family Fun</th>
-            <th>Treasure Trails</th>
-            <th>Canyon Explorer</th>
+            <td>Hiking</td>
+            <td>College Hikes</td>
+            <td>Family Fun</td>
+            <td>Treasure Trails</td>
+            <td>Canyon Explorer</td>
         </tr>
     </tbody>
     <tbody>
         <tr>
-            <th>Kayak</th>
-            <th>Western Kayak Meetup</th>
-            <th>Not Available</th>
-            <th>Youth Kayaking</th>
-            <th>Kayak Down</th>
+            <td>Kayak</td>
+            <td>Western Kayak Meetup</td>
+            <td>Not Available</td>
+            <td>Youth Kayaking</td>
+            <td>Kayak Down</td>
         </tr>
     </tbody>
     <tbody>
         <tr>
-            <th>Skydiving</th>
-            <th>Seacliff Diving</th>
-            <th>Sky is the limit</th>
-            <th>Not Available</th>
-            <th>Sky Diving for Beginners</th>
+            <td>Skydiving</td>
+            <td>Seacliff Diving</td>
+            <td>Sky is the limit</td>
+            <td>Not Available</td>
+            <td>Sky Diving for Beginners</td>
         </tr>
     </tbody>
     <tbody>
         <tr>
-            <th>Biking</th>
-            <th>Bicycle for One</th>
-            <th>Not Available</th>
-            <th>Bike Meetup Group</th>
-            <th>Not Available</th>
+            <td>Biking</td>
+            <td>Bicycle for One</td>
+            <td>Not Available</td>
+            <td>Bike Meetup Group</td>
+            <td>Not Available</td>
         </tr>
     </tbody>
-    <tfoot>
+    <tbody>
         <tr>
-            <th>Camping</th>
-            <th>Youth Camp</th>
-            <th>Rent a Tent</th>
-            <th>Campground Adventure</th>
-            <th>Sunset Camping</th>
+            <td>Camping</td>
+            <td>Youth Camp</td>
+            <td>Rent a Tent</td>
+            <td>Campground Adventure</td>
+            <td>Sunset Camping</td>
         </tr>
-    </tfoot>
+    </tbody>
 </table>
 </main><!-- End Main Content -->
 
-<!-- Footer Information -->
-<footer>&copy; Copyright 2024 :: GreatCliffs.com
-</footer>
-	<h4> Facebook Image </h4>
-    <h4> Instagram Image </h4>
-    <h4> Twitter Image </h4>
-    <p> This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use. </p>
-</div><!-- End Container -->
-
+<section>
+    <ul id="partner">
+        <li class="partner">
+            <img src="images/partners/partner-bustour.png" alt="partner bus tours">
+        </li>
+        <li class="partner">
+            <img src="images/partners/partner-cabinrental.png" alt="partner cabin rental">
+        </li>
+        <li class="partner">
+            <img src="images/partners/partner-campingadv.png" alt="partner camping adventure">
+        </li>
+        <li class="partner">
+            <img src="images/partners/partner-collegetours.png" alt="partner college tours">
+        </li>
+        <li class="partner">
+            <img src="images/partners/partner-rentalbike.png" alt="partner bike rentals">
+        </li>
+        <li class="partner">
+            <img src="images/partners/partner-tourgroup.png" alt="partner tour group">
+        </li>
+</section>
 </body>
+<!-- Footer Information -->
+<footer>
+    <div class="copy">
+        &copy;  Copyright 2024 :: GreatCliffs.com
+    </div>
+    <div class="social">
+        <a href="#" class="fa fa-facebook"><a>
+        <a href="#" class="fa fa-twitter"><a>
+        <a href="#" class="fa fa-instagram"><a>
+    </div>
+    
+    
+    <p> This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use. 
+
+    </p>
+    </div><!-- End Container -->
+</footer>
 </html>
