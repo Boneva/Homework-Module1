@@ -101,24 +101,29 @@
             background-color: #ecfab8;
             font-family: Arial, Helvetica, sans-serif;
         }
-        footer .copy{
+        
+        footer .copy {
             padding: 3.5em 3.5em 3.5em 13em;
             float: left;
             font-size: 0.9em;
         }
-        footer  .social{
+        
+        footer .social {
             padding: 2.5em;
             margin-right: 9.25em;
             float: right;
         }
+        
         footer {
             clear: both;
         }
+        
         footer p {
             font-size: 0.85em;
             text-align: center;
             padding: 9em;
         }
+        
         footer .social .fa {
             padding: 15px;
             font-size: 15px;
@@ -130,24 +135,26 @@
             border-radius: 50%;
             display: inline-block;
         }
+        
         footer .social .fa:hover {
             opacity: 0.7;
         }
-
+        
         footer .social .fa-facebook {
             background: #3b5998;
             color: rgb(255, 255, 255);
         }
-
+        
         footer .social .fa-twitter {
             background: #55acee;
             color: white;
         }
-
+        
         footer .social .fa-instagram {
             background: #125688;
             color: white;
         }
+        
         /* Activities */
         table {
             width: 1000px;

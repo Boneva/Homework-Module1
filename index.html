@@ -50,43 +50,77 @@
 
 </main><!-- End Main Content -->
 <section>
+   
     <ul id="partner">
-        <li class="partner">
-            <img src="images/partners/partner-bustour.png" alt="partner bus tours">
-        </li>
-        <li class="partner">
-            <img src="images/partners/partner-cabinrental.png" alt="partner cabin rental">
-        </li>
-        <li class="partner">
-            <img src="images/partners/partner-campingadv.png" alt="partner camping adventure">
-        </li>
-        <li class="partner">
-            <img src="images/partners/partner-collegetours.png" alt="partner college tours">
-        </li>
-        <li class="partner">
-            <img src="images/partners/partner-rentalbike.png" alt="partner bike rentals">
-        </li>
-        <li class="partner">
-            <img src="images/partners/partner-tourgroup.png" alt="partner tour group">
-        </li>
-</section>
-</body>
-<!-- Footer Information -->
-<footer>
-    <div class="copy">
-        &copy;  Copyright 2024 :: GreatCliffs.com
-    </div>
-    <div class="social">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-    </div>
-    <p> This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use. 
+      <!--   <li class="partner">
+             <img src="images/partners/partner-bustour.png" alt="partner bus tours">
+         </li>
+         <li class="partner">
+             <img src="images/partners/partner-cabinrental.png" alt="partner cabin rental">
+         </li>
+         <li class="partner">
+             <img src="images/partners/partner-campingadv.png" alt="partner camping adventure">
+         </li>
+         <li class="partner">
+             <img src="images/partners/partner-collegetours.png" alt="partner college tours">
+         </li>
+         <li class="partner">
+             <img src="images/partners/partner-rentalbike.png" alt="partner bike rentals">
+         </li>
+         <li class="partner">
+             <img src="images/partners/partner-tourgroup.png" alt="partner tour group">
+         </li>--> 
+ 
+ </section>
+ </body>
+ <!-- Footer Information -->
+ <footer>
+     <div class="copy">
+         &copy;  Copyright 2024 :: GreatCliffs.com
+     </div>
+     <div class="social">
+         <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-twitter"></a>
+         <a href="#" class="fa fa-instagram"></a>
+     </div>
+     
+     
+     <p> This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use. 
+ 
+     </p>
+     </div><!-- End Container -->
+ </footer>
+ <!-- JavaScript Codes -->
+ <script>
+     var partners = []; // Declare an empty array to store image elements
+     var partnerFileNames = []; // Declare an empty array to store image file names
+     var partnerImageList = []; // Declare an empty array to store HTML list that contains an image
+     var partnerImage; // Declare an empty variable to store the assembled image list codes
+     var openPartnerList = "<li class='partner'>"; // Declare a variable to contain the open list tag
+     var closePartnerList = "</li>"; // Declare a variable to contain the close list tag
+     
+     // Array of partner image file names (without extension)
+     var partnerNames = [
+         "partner-bustour",
+         "partner-cabinrental",
+         "partner-campingadv",
+         "partner-collegetours",
+         "partner-rentalbike",
+         "partner-tourgroup"
+     ];
+     
+     // Create a loop to create 6 partner images starting with index of 0
+     for (var i = 0; i < partnerNames.length; i++) {
+         partnerFileNames.push(partnerNames[i]); // Store image file name in the array
+         partners.push("<img src='images/partners/" + partnerFileNames[i] + ".png' alt='" + partnerFileNames[i].replace("partner-", "").replace(/-/g, " ") + "'>"); // Assemble file name into image element and store in an array
+         partnerImage = openPartnerList + partners[i] + closePartnerList; // Assemble image element from array with list elements and store in a variable
+         partnerImageList.push(partnerImage); // Store (push) the assembled list codes into an array
+     }
+     
+     // Display all six image codes stored in the array
+     document.getElementById("partner").innerHTML = partnerImageList.join('');
+ </script>
 
-    </p>
-</div><!-- End Container -->
-</footer>
-<!-- JavaScript Codes -->
 <script>
     //create a time data function
     function currentTime() {
