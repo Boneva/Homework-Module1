@@ -3,13 +3,6 @@
 // Function to generate combination of characters
 function generateCode() {
 
-//Display all six image codes stored in the array
-document.getElementById("partners").innerHTML =imagelist;
-
-// Create variables to store generated codes and the type of characters we want to show as codes
-/* ------ RANDOM CODES ------ */
-// NOTE: submit button is initially disabled upon loading of this page – see <body> in html
-
 var code = ''; // to store generated codes and initialize to empty value
 var getCode = ''; // to store entered code
 var btnvalue; // for button boolean value
