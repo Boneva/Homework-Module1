@@ -273,8 +273,29 @@
             height: 2.5em;
             font-size: 1.2em;
             font-weight: bold;
-            /*background-color: #4977D1;*/
-            color: #ffffff;
+            /*background-color: #4977D8;*/
+            color: #423b3b;
             border: none;
         }
-        
+        .randomcode {
+            margin-bottom: 20px;
+          }
+          .randomcode #codes {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 18px;
+            width: fit-content;
+          }
+        #submit {
+            background-color: rgba(73, 119, 209, 0.3);
+            color: rgba(255, 255, 255, 0.5);
+            cursor: not-allowed;
+          }
+          #submit:enabled {
+            background-color: rgba(73, 119, 209, 1);
+            color: rgba(255, 255, 255, 1);
+            cursor: pointer;
+          }

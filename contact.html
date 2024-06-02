@@ -68,19 +68,28 @@
                             <option>South Cliff</option>
                         </select>
                     </div>
-                    <div class="commentbox">
-                        <label>How did you hear about us:</label>
-                        <textarea></textarea>
+
+                    <label for="contactSelect">How should we contact you?</label>
+                    <select id="contactSelect">
+                      <option value="">Select One</option>
+                      <option value="email">Email</option>
+                      <option value="phone">Phone</option>
+                    </select>
+                    
+                    <div class="contact-method" id="contactMethod">
+                      <label id="contactLabel" for="contactInput"></label>
+                      <input type="text" id="contactInput" name="contactInput"><br><br>
                     </div>
+                      
                     <!-- Random Codes -->
                     <div class="randomcode">
-                        <label>Enter the code shown:</label>
+                        <label for="codeentered">Enter the code shown:</label>
                         <input type="text" name="randomcode" id="codeentered" placeholder="Enter characters">
                         <p id="codes"></p>
-                    </div>
-                    <div class="button">
+                      </div>
+                      <div class="button">
                         <input type="submit" id="submit" value="Inquire">
-                    </div>
+                      </div>
                 </fieldset>
             </form>
         </main>
@@ -108,3 +117,4 @@
 <script src="js/randomcodes.js" defer></script>
 <script src="js/digclock.js" defer></script>
 <script src="js/site_scripts.js" defer></script>
+<script src="JS/contact.js" defer></script>
