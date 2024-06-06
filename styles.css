@@ -299,3 +299,12 @@
             color: rgba(255, 255, 255, 1);
             cursor: pointer;
           }
+
+        /*active*/
+        #pid {
+            cursor: pointer;
+        }
+        .selectable { 
+            color: rgb(255, 255, 255); 
+            background-color: #96b652;
+        }
