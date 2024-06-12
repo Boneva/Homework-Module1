@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     $("td.selectable").click(function() {
         var content = $(this).text();
