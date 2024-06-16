@@ -75,12 +75,14 @@
         section {
             width: 100%;
             background-color: #4288c3;
+            
         }
         section #partner {
             width: 1200px;
             padding: 2em 0 2em 0;
             margin: 0 auto;
-            text-align: center;
+            text-align: center;  
+
         }
         section #partner .partner{
             display: inline-block;
@@ -88,10 +90,21 @@
             padding: 1.3em 1.5em;
             background-color: #fff;
             border-radius: 50%;
+            
         }
         section #partner .partner img {
             width: 90px;
             height: 90px;
+        }
+        @media (min-width: 1200px) {
+            .partners {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 800px) {
+            .partners {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
         /* footer */
         footer {
@@ -238,9 +251,9 @@
         .cliff img {
             width: 100%;
             height: auto;
-            display: block;
+            cursor: pointer;
         }
-
+       
         .cliff .caption {
             position: absolute;
             top: 0;
@@ -388,4 +401,22 @@
         #activities main #displaySelected #sendinfo input[type="email"] {
             width: 200px;
         }
+        
+        
+        
+        
+    /*size veriation*/ 
+        
+        .cards {
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 1rem;
+          }
+            
+        @media (min-width:800px) {
+                .cards {grid-template-columns: repeat(2,1fr);}
+              }
+    
+
         
