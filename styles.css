@@ -6,7 +6,7 @@
             padding-top: 3em;
         }
         #home header {
-            background:  no-repeat lightgray url(images/cliff_ocean.jpg);
+            background:  no-repeat rgb(248, 245, 245) url(images/cliff_ocean.jpg);
             background-size: 1500px;
             height: 300px;
         }
@@ -26,7 +26,7 @@
             height: 300px;
         }
         .main-header {
-            background-color: rgba(255, 255, 255,0.8);
+            background-color: rgba(255, 255, 255, 0.8);
             width: 700px;
             margin: 2em auto 0 auto;
             min-height: 100px;
@@ -39,6 +39,14 @@
             float: left;
         }
         /*Navigation*/
+        .navbar {
+            background: transparent !important;
+            position: relative;
+            z-index: 9999; 
+        }
+        .navbar-nav {
+            background-color: rgba(255, 255, 255, 0.8)
+        }
         .main-menu {
             margin-left: 227px;
             font-weight: 400;
@@ -67,6 +75,7 @@
         .main-menu ul li.active a {
             color: #fff;
         }
+
         /* Main */
         main h1 {
             font-family: Arial, Helvetica, sans-serif;
