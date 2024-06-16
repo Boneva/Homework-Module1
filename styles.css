@@ -43,6 +43,8 @@
             background: transparent !important;
             position: relative;
             z-index: 9999; 
+            margin-left: auto;
+            
         }
         .navbar-nav {
             background-color: rgba(255, 255, 255, 0.8)
@@ -75,6 +77,10 @@
         .main-menu ul li.active a {
             color: #fff;
         }
+        .navbar-toggler {
+            margin-left: auto;
+        }
+       
 
         /* Main */
         main h1 {
@@ -111,17 +117,17 @@
         }
         
         
-        @media (min-width: 600px) {
+        @media (min-width: 400px) {
             section #partner {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        @media (min-width: 900px) {
+        @media (min-width: 700px) {
             section #partner {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 1100px) {
             section #partner {
                 grid-template-columns: repeat(6, 1fr);
             }
