@@ -2,13 +2,13 @@
         /*header*/
         header {
             Width: 100%;
-            height: 400 px;
-            padding-top: 3em;
+            min-height: 400px;
+            padding-top: 1em;
         }
-        #home header {
-            background:  no-repeat rgb(248, 245, 245) url(images/cliff_ocean.jpg);
-            background-size: 1500px;
-            height: 300px;
+        #home {
+            background:  no-repeat rgb(255, 255, 255) url(images/cliff_ocean.jpg);
+            background-size: 100% 400px;
+           
         }
         #activities header { 
             background: no-repeat lightgray url(images/runfly.jpg);
@@ -26,7 +26,7 @@
             height: 300px;
         }
         .main-header {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(34, 33, 33, 0.733);
             width: 700px;
             margin: 2em auto 0 auto;
             min-height: 100px;
@@ -35,23 +35,19 @@
         .main-header .logo img {
             width: 100px;
             height: 100px;
-            margin: 0 2em 0 0;
+            margin: 0 auto 0 0;
             float: left;
         }
         /*Navigation*/
         .navbar {
-            background: transparent !important;
-            position: relative;
-            z-index: 9999; 
+            z-index: 900; 
             margin-left: auto;
-            
         }
-        .navbar-nav {
-            background-color: rgba(255, 255, 255, 0.8)
-        }
+        
         .main-menu {
-            margin-left: 227px;
+            float: right;
             font-weight: 400;
+            margin: 0 auto 0 auto ;
         }
         .main-menu ul li {
             list-style-type: none;
