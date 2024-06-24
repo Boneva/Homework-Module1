@@ -38,71 +38,97 @@
     </header>
 
 <!-- Main Content -->
-<main>
-   
+<main class="container mt-5">
     <h1>Activities</h1>
-    <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
+    <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly, and yearly. These activities are not, however, run by the state park and recreational department. They are operated and managed by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
 
-    <table>
-        <caption>Activities at the Cliffs</caption>
-        <thead>
-            <tr>
-                <th>Activity</th>
-                <th>West Cliff</th>
-                <th>North Cliff</th>
-                <th>East Cliff</th>
-                <th>South Cliff</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hiking</td>
-                <td class="selectable">College Hikes</td>
-                <td class="selectable">Family Fun</td>
-                <td class="selectable">Treasure Trails</td>
-                <td class="selectable">Canyon Explorer</td>
-            </tr>
-            <tr>
-                <td>Kayak</td>
-                <td class="selectable">Western Kayak Meetup</td>
-                <td>Not Available</td>
-                <td class="selectable">Youth Kayaking</td>
-                <td class="selectable">Kayak Down</td>
-            </tr>
-            <tr>
-                <td>Skydiving</td>
-                <td class="selectable">Seacliff Diving</td>
-                <td class="selectable">Sky is the limit</td>
-                <td>Not Available</td>
-                <td class="selectable">Sky Diving for Beginners</td>
-            </tr>
-            <tr>
-                <td>Biking</td>
-                <td class="selectable">Bicycle for One</td>
-                <td>Not Available</td>
-                <td class="selectable">Bike Meetup Group</td>
-                <td class="selectable">Not Available</td>
-            </tr>
-            <tr>
-                <td>Camping</td>
-                <td class="selectable">Youth Camp</td>
-                <td class="selectable">Rent a Tent</td>
-                <td class="selectable">Campground Adventure</td>
-                <td class="selectable">Sunset Camping</td>
-            </tr>
-        </tbody>
-    </table>
-</table>
-<div id="displaySelected">
-    <div id="result">
-        <h4>My selected activities to enquire:</h4>
+    <div class="table"> 
+        <table class="table">
+            <h2 class="table-title">Activities at the Cliffs</h2>
+            <thead> 
+                <tr>
+                    <th>Activity</th>
+                    <td>West Cliff</th>
+                    <td>North Cliff</th>
+                    <td>East Cliff</th>
+                    <td>South Cliff</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hiking</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">College Hikes</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Family Fun</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Treasure Trails</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Canyon Explorer</td>
+                </tr>
+                <tr>
+                    <td>Kayak</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Western Kayak Meetup</td>
+                    <td >Not Available</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Youth Kayaking</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Kayak Down</td>
+                </tr>
+                <tr>
+                    <td>Skydiving</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Seacliff Diving</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Sky is the Limit</td>
+                    <td>Not Available</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Sky Diving for Beginners</td>
+                </tr>
+                <tr>
+                    <td>Biking</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Bicycle for One</td>
+                    <td>Not Available</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Bike Meetup Group</td>
+                    <td>Not Available</td>
+                </tr>
+                <tr>
+                    <td>Camping</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Youth Camp</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Rent a Tent</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Campground Adventure</td>
+                    <td class="selectable" data-toggle="modal" data-target="#myModal">Sunset Camping</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div id="sendinfo">
-        <input type="email" placeholder="johndoe@gmail.com">
-        <button>Get Info</button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">My selected activities to enquire:</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+            
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activity</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Get Info</button>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <div id="displaySelected">
+        <div id="result">
+            <h4>My selected activities to inquire:</h4>
+        </div>
+        <div id="sendinfo">
+            <input type="email" class="form-control" placeholder="johndoe@gmail.com">
+            <button class="btn btn-primary">Get Info</button>
+        </div>
     </div>
 </div>
-
 </main><!-- End Main Content -->
 
 <section>
